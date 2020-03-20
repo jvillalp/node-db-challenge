@@ -5,7 +5,7 @@ const cors = require('cors')
 
 const server = express()
 
-const resourcesRouter = require('../auth/resources-router')
+const Router = require('../auth/router')
 
 server.use(express.json())
 server.use(helmet())
@@ -16,6 +16,6 @@ server.get('/', (req, res) => {
     res.status(200).json({ message: 'it is A L I V E !'})
 })
 
-server.use('/api/resources', resourcesRouter)
+server.use('/api/todo', Router)
 
 module.exports = server
