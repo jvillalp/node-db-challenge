@@ -10,5 +10,5 @@ function add(task){
 }
 
 function find(){
-    return db("task")
+    return db("tasks")
 }
