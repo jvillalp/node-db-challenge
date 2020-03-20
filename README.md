@@ -16,19 +16,19 @@ The Minimum Viable Product must be completed in three hours.
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your _Team Lead_ as collaborator on Github.
-- [ ] Clone your forked version of the Repository.
-- [ ] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
-- [ ] Implement the project on this Branch, committing changes regularly.
-- [ ] Push commits: git push origin `firstName-lastName`.
+- [x] Create a forked copy of this project.
+- [x] Add your _Team Lead_ as collaborator on Github.
+- [x] Clone your forked version of the Repository.
+- [x] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
+- [x] Implement the project on this Branch, committing changes regularly.
+- [x] Push commits: git push origin `firstName-lastName`.
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge `firstName-lastName` Branch into master on **your fork, don't make Pull Requests against Lambda's repository**.
-- [ ] Please don't merge your own pull request.
-- [ ] Add your _Team Lead_ as a Reviewer on the Pull-request
-- [ ] Your _Team Lead_ will count the challenge as done by merging the branch into _master_.
+- [x] Submit a Pull-Request to merge `firstName-lastName` Branch into master on **your fork, don't make Pull Requests against Lambda's repository**.
+- [x] Please don't merge your own pull request.
+- [x] Add your _Team Lead_ as a Reviewer on the Pull-request
+- [x] Your _Team Lead_ will count the challenge as done by merging the branch into _master_.
 
 ## Commits
 
@@ -38,13 +38,30 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Explain the difference between `Relational Databases` and `SQL`.
+- [x] Explain the difference between `Relational Databases` and `SQL`.
 
-- [ ] Why do tables need a `primary key`?
+  Relational database is the database software which manages storage, querying, updating, etc. (it is the system)
 
-- [ ] What is the name given to a table column that references the primary key on another table.
+  SQL (structured query language) is a language which is typically used to query the RDB. (this is the language used to interact with the system)
 
-- [ ] What do we need in order to have a _many to many_ relationship between two tables.
+- [x] Why do tables need a `primary key`?
+
+  Tables need a primary key to ensure these values are unique. Each table should have a column that uniquely identifies one and only one row. Without the primary key it would be difficult to insert the same data various times. They are NOT NULL and unique.
+
+ What is the name given to a table column that references the primary key on another table.
+
+- [x] What is the name given to a table column that references the primary key on another table.
+
+  The table with the foreign key is called the child table and the table containing the candidate key is called the referenced (parent table)
+
+  What do we need in order to have a many to many relationship between two tables.
+
+- [x] What do we need in order to have a _many to many_ relationship between two tables.
+
+  A many-to-many relationship occurs when multiple records in a tbale are associated with multiple records in another table. 
+
+  customers can purchase many products,
+  products can be purchased by many customers.
 
 ## Minimum Viable Product
 
