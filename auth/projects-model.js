@@ -3,7 +3,9 @@ const db = require('../database/dbConfig')
 module.exports = {
     add,
     find,
-    findById
+    findById,
+    update,
+    remove
 }
 
 function add(project){
@@ -18,4 +20,16 @@ function findById(id) {
     return db('projects')
         .where({id})
         .first();
+}
+
+function update(id, changes){
+    return db("products")
+    .where({id})
+    .update(changes)
+}
+
+function remove(){
+    return db("products")
+    .where({id})
+    .del()
 }
